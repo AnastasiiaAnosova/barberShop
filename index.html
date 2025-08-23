@@ -4,61 +4,101 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Raleway:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html">
+    <header class="page-header">
+      <nav class="page-nav">
+        <a class="logo link" href="./index.html">
           <img
+            class="logo-icon"
             src="./images/logo.svg"
             alt="Logo of company"
             width="69"
             height="55"
           />
         </a>
-        <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Services and prices</a></li>
-          <li><a href="">Barbers</a></li>
-          <li><a href="">Contacts</a></li>
+        <ul class="menu list">
+          <li class="menu-item">
+            <a class="menu-link link" href="#about">About</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link link" href="#services">Services and prices</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link link" href="#barbers">Barbers</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link link" href="#contacts">Contacts</a>
+          </li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">Online-booking</button>
+      <div class="">
+        <a class="contact-phone-number link" href="tel:+380441111111"
+          >+38 044 111 11 11</a
+        >
+        <button class="modal-button" type="button">Online-booking</button>
+      </div>
     </header>
     <main>
       <!-- HERO -->
-      <section>
-        <ul>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Youtube</a></li>
-        </ul>
-        <div>
-          <p>A hair salon for men in Kyiv</p>
-          <h1>BarberShop</h1>
-          <p>
+      <section class="hero section">
+        <div class="hero-left-side">
+          <ul class="media-brand-list list">
+            <li class="media-brand-item">
+              <a class="media-brand-link link" href="">Instagram</a>
+            </li>
+            <li class="media-brand-item">
+              <a class="media-brand-link link" href="">Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hero-right-side">
+          <p class="suptitle suptitle-theme-dark">
+            A hair salon for men in Kyiv
+          </p>
+          <h1 class="main-title title">BarberShop</h1>
+          <p class="section-description section-description-theme-dark">
             We are experts in trendy men’s haircuts. We work quickly, carefully
             and with style.
           </p>
-          <div>
-            <button type="button">Back</button>
-            <button type="button">Forward</button>
+          <div class="switch-buttons">
+            <button
+              class="switch-button switch-back nonactive-button"
+              type="button"
+            >
+              Back
+            </button>
+            <button
+              class="switch-button switch-forward active-button"
+              type="button"
+            >
+              Forward
+            </button>
           </div>
         </div>
       </section>
       <!-- ABOUT -->
-      <section>
-        <ul>
-          <li>
+      <section class="about-section" id="about">
+        <ul class="about-gallery-list list">
+          <li class="about-gallery-item">
             <img
+              class="about-gallery-img"
               src="./images/about/about1.jpg"
               alt="The barber shaves the beard"
               width="270"
               height="445"
             />
           </li>
-          <li>
+          <li class="about-gallery-item">
             <img
+              class="about-gallery-img"
               src="./images/about/about2.jpg"
               alt="he barber shaves the beard"
               width="270"
@@ -67,259 +107,357 @@
           </li>
         </ul>
         <div>
-          <p>About</p>
-          <h2>Best Barbershop in your city</h2>
-          <p>
+          <p class="suptitle suptitle-theme-light">About</p>
+          <h2 class="section-title section-title-theme-light title">
+            Best Barbershop in your city
+          </h2>
+          <p class="section-description section-description-theme-light">
             If you want to add more confidence to your image, you should
             definitely visit us.
           </p>
-          <p>
+          <p class="section-subdescription section-subdescription-theme-light">
             We are a team that never stops at what has been achieved and are
             thirsty for changes. And when you fall into the hands of our master,
             you will never be the same again. We are a team that is always "on
             the same wave" with clients. Therefore, we are always ready to
             improve everyone who comes to us!
           </p>
-          <a href="">Online-booking</a>
+          <a class="modal-button-link link" href="#booking">Online-booking</a>
         </div>
       </section>
       <!-- SERVICES AND PRICES -->
-      <section>
-        <p>Spend your time with the best masters</p>
-        <h2>Services and prices</h2>
-        <table>
-          <tbody>
-            <tr>
-              <td>Men’s haircut</td>
-              <td>from 300 uah.</td>
+      <section class="services-section" id="services">
+        <p class="suptitle suptitle-theme-dark">
+          Spend your time with the best masters
+        </p>
+        <h2 class="section-title section-title-theme-dark title">
+          Services and prices
+        </h2>
+        <table class="table-prices">
+          <tbody class="table-prices-body">
+            <tr class="table-prices-row">
+              <td class="table-prices-data">Men’s haircut</td>
+              <td class="table-prices-data">from 300 uah.</td>
             </tr>
-            <tr>
-              <td>Beard trim</td>
-              <td>from 300 uah.</td>
+            <tr class="table-prices-row">
+              <td class="table-prices-data">Beard trim</td>
+              <td class="table-prices-data">from 300 uah.</td>
             </tr>
-            <tr>
-              <td>Mustache trim</td>
-              <td>from 200 uah.</td>
+            <tr class="table-prices-row">
+              <td class="table-prices-data">Mustache trim</td>
+              <td class="table-prices-data">from 200 uah.</td>
             </tr>
-            <tr>
-              <td>Straight razor shave</td>
-              <td>from 200 uah.</td>
-            </tr>
-          </tbody>
-        </table>
-        <table>
-          <tbody>
-            <tr>
-              <td>Trainee’s haircut</td>
-              <td>from 50 uah.</td>
-            </tr>
-            <tr>
-              <td>Haircut under the nozzle</td>
-              <td>from 200 uah.</td>
-            </tr>
-            <tr>
-              <td>Children’s haircut (0-12 y.o.)</td>
-              <td>from 300 uah.</td>
-            </tr>
-            <tr>
-              <td>Camouflage of gray hair</td>
-              <td>from 200 uah.</td>
+            <tr class="table-prices-row">
+              <td class="table-prices-data">Straight razor shave</td>
+              <td class="table-prices-data">from 200 uah.</td>
             </tr>
           </tbody>
         </table>
-        <button type="button">Online-booking</button>
+        <table class="table-prices">
+          <tbody class="table-prices-body">
+            <tr class="table-prices-row">
+              <td class="table-prices-data">Trainee’s haircut</td>
+              <td class="table-prices-data">from 50 uah.</td>
+            </tr>
+            <tr class="table-prices-row">
+              <td class="table-prices-data">Haircut under the nozzle</td>
+              <td class="table-prices-data">from 200 uah.</td>
+            </tr>
+            <tr class="table-prices-row">
+              <td class="table-prices-data">Children’s haircut (0-12 y.o.)</td>
+              <td class="table-prices-data">from 300 uah.</td>
+            </tr>
+            <tr class="table-prices-row">
+              <td class="table-prices-data">Camouflage of gray hair</td>
+              <td class="table-prices-data">from 200 uah.</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="modal-button" type="button">Online-booking</button>
       </section>
       <!-- DESCRIPTION -->
-      <section>
-        <ul>
-          <li>
-            <p>600<sup class="character-plus">+</sup></p>
-            <p>Satisfied customers per day</p>
+      <section class="description-section">
+        <ul class="info-data-list list">
+          <li class="info-data-item">
+            <p class="info-data-number">
+              600<sup class="character-plus">+</sup>
+            </p>
+            <p class="info-data-text">Satisfied customers per day</p>
           </li>
-          <li>
-            <p>50<sup class="character-plus">+</sup></p>
-            <p>Awards for excellent service</p>
+          <li class="info-data-item">
+            <p class="info-data-number">
+              50<sup class="character-plus">+</sup>
+            </p>
+            <p class="info-data-text">Awards for excellent service</p>
           </li>
-          <li>
-            <p>20<sup class="character-plus">+</sup></p>
-            <p>Kyiv’s best barbers</p>
+          <li class="info-data-item">
+            <p class="info-data-number">
+              20<sup class="character-plus">+</sup>
+            </p>
+            <p class="info-data-text">Kyiv’s best barbers</p>
           </li>
-          <li>
-            <p>100<sup class="character-plus">+</sup></p>
-            <p>Gifts for regular customers</p>
+          <li class="info-data-item">
+            <p class="info-data-number">
+              100<sup class="character-plus">+</sup>
+            </p>
+            <p class="info-data-text">Gifts for regular customers</p>
           </li>
         </ul>
         <div>
-          <p>Old traditional school</p>
-          <h2>¿Why people come to us?</h2>
-          <p>
+          <p class="suptitle suptitle-theme-light">Old traditional school</p>
+          <h2 class="section-title section-title-theme-light title">
+            ¿Why people come to us?
+          </h2>
+          <p class="section-description section-description-theme-light">
             Only good things are said about us. But it's better to see and feel
             1 time than read 10 times.
           </p>
         </div>
       </section>
       <!-- OUR BARBERS -->
-      <section>
-        <p>For true enjoyers of the atmosphere</p>
-        <h2>Our barbers</h2>
-        <ul>
-          <li>
+      <section class="barbers-section" id="barbers">
+        <p class="suptitle suptitle-theme-light">
+          For true enjoyers of the atmosphere
+        </p>
+        <h2 class="section-title section-title-theme-light title">
+          Our barbers
+        </h2>
+        <ul class="card-barber-list list">
+          <li class="card-barber-item">
             <img
+              class="card-barber-img"
               src="./images/barbers/john_smith.jpg"
               alt="John Smith cuts a client's hair"
               width="370"
               height="346"
             />
-            <h3>John Smith</h3>
-            <p>Extreme Barber</p>
-            <ul>
-              <li>
-                <a href="" aria-label="John Smith Instagram link">
+            <h3 class="card-barber-name">John Smith</h3>
+            <p class="card-barber-position">Extreme Barber</p>
+            <ul class="card-barber-social-list list">
+              <li class="card-barber-social-item">
+                <a
+                  class="card-barber-social-link link"
+                  href=""
+                  aria-label="John Smith Instagram link"
+                >
                   <img
+                    class="card-barber-social-link-icon"
                     src="./images/social-media/instagram.svg"
                     alt="Logo of Instagram"
                   />
                 </a>
               </li>
-              <li>
-                <a href="" aria-label="John Smith Twitter link">
+              <li class="card-barber-social-item">
+                <a
+                  class="card-barber-social-link link"
+                  href=""
+                  aria-label="John Smith Twitter link"
+                >
                   <img
+                    class="card-barber-social-link-icon"
                     src="./images/social-media/twitter.svg"
                     alt="Logo of Twitter"
                   />
                 </a>
               </li>
-              <li>
-                <a href="" aria-label="John Smith Facebook link"
-                  ><img
+              <li class="card-barber-social-item">
+                <a
+                  class="card-barber-social-link link"
+                  href=""
+                  aria-label="John Smith Facebook link"
+                >
+                  <img
+                    class="card-barber-social-link-icon"
                     src="./images/social-media/facebook.svg"
                     alt="Logo of Facebook"
-                /></a>
+                  />
+                </a>
               </li>
-              <li>
-                <a href="" aria-label="John Smith Linkedin link"
+              <li class="card-barber-social-item">
+                <a
+                  class="card-barber-social-link link"
+                  href=""
+                  aria-label="John Smith Linkedin link"
                   ><img
+                    class="card-barber-social-link-icon"
                     src="./images/social-media/linkedin.svg"
                     alt="Logo of Linkedin"
                 /></a>
               </li>
             </ul>
           </li>
-          <li>
+          <li class="card-barber-item">
             <img
+              class="card-barber-img"
               src="./images/barbers/michele_doe.jpg"
               alt="Michele Doe cuts a client's hair"
               width="370"
               height="346"
             />
-            <h3>Michele Doe</h3>
-            <p>Extreme Barber</p>
-            <ul>
-              <li>
-                <a href="" aria-label="Michele Doe Instagram link"
-                  ><img
+            <h3 class="card-barber-name">Michele Doe</h3>
+            <p class="card-barber-position">Extreme Barber</p>
+            <ul class="card-barber-social-list list">
+              <li class="card-barber-social-item">
+                <a
+                  class="card-barber-social-link link"
+                  href=""
+                  aria-label="Michele Doe Instagram link"
+                >
+                  <img
+                    class="card-barber-social-link-icon"
                     src="./images/social-media/instagram.svg"
                     alt="Logo of Instagram"
-                /></a>
+                  />
+                </a>
               </li>
-              <li>
-                <a href="" aria-label="Michele Doe Twitter link">
+              <li class="card-barber-social-item">
+                <a
+                  class="card-barber-social-link link"
+                  href=""
+                  aria-label="Michele Doe Twitter link"
+                >
                   <img
+                    class="card-barber-social-link-icon"
                     src="./images/social-media/twitter.svg"
                     alt="Logo of Twitter"
                   />
                 </a>
               </li>
-              <li>
-                <a href="" aria-label="Michele Doe Facebook link"
-                  ><img
+              <li class="card-barber-social-item">
+                <a
+                  class="card-barber-social-link link"
+                  href=""
+                  aria-label="Michele Doe Facebook link"
+                >
+                  <img
+                    class="card-barber-social-link-icon"
                     src="./images/social-media/facebook.svg"
-                    alt="Logo of Facebook"
-                /></a>
+                    alt="Logo of
+                  Facebook"
+                  />
+                </a>
               </li>
-              <li>
-                <a href="" aria-label="Michele Doe Linkedin link"
-                  ><img
+              <li class="card-barber-social-item">
+                <a
+                  class="card-barber-social-link link"
+                  href=""
+                  aria-label="Michele Doe Linkedin link"
+                >
+                  <img
+                    class="card-barber-social-link-icon"
                     src="./images/social-media/linkedin.svg"
                     alt="Logo of Linkedin"
-                /></a>
+                  />
+                </a>
               </li>
             </ul>
           </li>
-          <li>
+          <li class="card-barber-item">
             <img
+              class="card-barber-img"
               src="./images/barbers/alan_black.jpg"
               alt="Alan Black cuts a client's hair"
               width="370"
               height="346"
             />
-            <h3>Alan Black</h3>
-            <p>Extreme Barber</p>
-            <ul>
-              <li>
-                <a href="" aria-label="Alan Black Instagram link"
-                  ><img
+            <h3 class="card-barber-name">Alan Black</h3>
+            <p class="card-barber-position">Extreme Barber</p>
+            <ul class="card-barber-social-list list">
+              <li class="card-barber-social-item">
+                <a
+                  class="card-barber-social-link link"
+                  href=""
+                  aria-label="Alan Black Instagram link"
+                >
+                  <img
+                    class="card-barber-social-link-icon"
                     src="./images/social-media/instagram.svg"
                     alt="Logo of Instagram"
-                /></a>
+                  />
+                </a>
               </li>
-              <li>
-                <a href="" aria-label="Alan Black Twitter link">
+              <li class="card-barber-social-item">
+                <a
+                  class="card-barber-social-link link"
+                  href=""
+                  aria-label="Alan Black Twitter link"
+                >
                   <img
+                    class="card-barber-social-link-icon"
                     src="./images/social-media/twitter.svg"
                     alt="Logo of Twitter"
                   />
                 </a>
               </li>
-              <li>
-                <a href="" aria-label="Alan Black Facebook link"
-                  ><img
+              <li class="card-barber-social-item">
+                <a
+                  class="card-barber-social-link link"
+                  href=""
+                  aria-label="Alan Black Facebook link"
+                >
+                  <img
+                    class="card-barber-social-link-icon"
                     src="./images/social-media/facebook.svg"
-                    alt="Logo of Facebook"
-                /></a>
+                    alt="Logo of
+                  Facebook"
+                  />
+                </a>
               </li>
-              <li>
-                <a href="" aria-label="Alan Black Linkedin link"
-                  ><img
+              <li class="card-barber-social-item">
+                <a
+                  class="card-barber-social-link link"
+                  href=""
+                  aria-label="Alan Black Linkedin link"
+                >
+                  <img
+                    class="card-barber-social-link-icon"
                     src="./images/social-media/linkedin.svg"
                     alt="Logo of Linkedin"
-                /></a>
+                  />
+                </a>
               </li>
             </ul>
           </li>
         </ul>
       </section>
       <!-- Gallery OF IMAGES -->
-      <section>
+      <section class="gallery-section">
+        <!-- hidden title -->
         <h2>Gallery of images</h2>
-        <p>In Latin, "barba" means "beard"</p>
-        <ul>
-          <li>
+        <p class="suptitle suptitle-theme-light">
+          In Latin, "barba" means "beard"
+        </p>
+        <ul class="gallery-list list">
+          <li class="gallery-item">
             <img
+              class="gallery-img"
               src="./images/gallery/gallery1.jpg"
               alt="The barber cuts the client's hair"
               width="270"
               height="360"
             />
           </li>
-          <li>
+          <li class="gallery-item">
             <img
+              class="gallery-img"
               src="./images/gallery/gallery2.jpg"
               alt="Barber lathers a customer's beard"
               width="270"
               height="360"
             />
           </li>
-          <li>
+          <li class="gallery-item">
             <img
+              class="gallery-img"
               src="./images/gallery/gallery3.jpg"
               alt="The barber steams the client's face with a warm towel"
               width="270"
               height="360"
             />
           </li>
-          <li>
+          <li class="gallery-item">
             <img
+              class="gallery-img"
               src="./images/gallery/gallery4.jpg"
               alt="Barber makes crispy line up haircut"
               width="270"
@@ -329,47 +467,72 @@
         </ul>
       </section>
       <!-- ONLINE-BOOKING -->
-      <section>
-        <h2>Online-booking</h2>
-        <form action="">
-          <button type="submit">Send</button>
+      <section class="booking-section" id="booking">
+        <h2 class="section-title section-title-theme-dark title">
+          Online-booking
+        </h2>
+        <form class="form-booking" action="">
+          <button class="modal-button" type="submit">Send</button>
         </form>
       </section>
       <!-- CONTACTS -->
-      <section>
-        <h2>Contacts</h2>
-        <address>
-          <ul>
-            <li>
+      <section class="contacts-section" id="contacts">
+        <h2 class="section-title section-title-theme-dark title">Contacts</h2>
+        <address class="address">
+          <ul class="address-contact-list list">
+            <li class="address-contact-item">
               <img
+                class="address-contact-icon"
                 src="./images/contacts-icons/map-pin.svg"
                 alt="Map pin icon"
               />
-              <a href="" target="_blank" rel="noopener noreferrer"
+              <a
+                class="address-contact-link address-contact-link-street link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
                 >st. Vasilkivska, 7A Kyiv, 08132</a
               >
             </li>
-            <li>
-              <img src="./images/contacts-icons/phone.svg" alt="Phone icon" />
-              <a href="tel:+380441111111">+38 044 111 11 11</a>
+            <li class="address-contact-item">
+              <img
+                class="address-contact-icon"
+                src="./images/contacts-icons/phone.svg"
+                alt="Phone icon"
+              />
+              <a class="address-contact-link link" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+              >
             </li>
-            <li>
-              <img src="./images/contacts-icons/mail.svg" alt="Envelope icon" />
-              <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+            <li class="address-contact-item">
+              <img
+                class="address-contact-icon"
+                src="./images/contacts-icons/mail.svg"
+                alt="Envelope icon"
+              />
+              <a class="address-contact-link" href="mailto:barbershop@email.com"
+                >barbershop@email.com</a
+              >
             </li>
           </ul>
         </address>
         <div>
-          <h3>Working hours</h3>
-          <p>Every day from 9:00 to 22:00</p>
+          <h3 class="work-time-title">Working hours</h3>
+          <p class="section-description section-description-theme-dark">
+            Every day from 9:00 to 22:00
+          </p>
         </div>
       </section>
     </main>
-    <footer>
-      <p>&copy; Copyright 2020</p>
-      <ul>
-        <li><a href="">Instagram</a></li>
-        <li><a href="">Youtube</a></li>
+    <footer class="footer">
+      <p class="text-copyright">&copy; Copyright 2020</p>
+      <ul class="media-brand-list list">
+        <li class="media-brand-item">
+          <a class="media-brand-link link" href="">Instagram</a>
+        </li>
+        <li class="media-brand-item">
+          <a class="media-brand-link link" href="">Youtube</a>
+        </li>
       </ul>
     </footer>
   </body>

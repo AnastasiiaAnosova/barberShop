@@ -1,0 +1,312 @@
+:root {
+    --primary-font: "Open Sans", sans-serif;
+    --title-font: "Raleway", sans-serif;
+    --accent-color: #FF6C00;
+    --primary-color-dark-theme: #FFFFFF;
+    --primary-color-ligth-theme: #303030;
+    --suptitle-color-dark-theme: rgba(157, 164, 189, 0.6);
+    --suptitle-color-light-theme: #303030;
+    --section-description-color-theme-dark: #9DA4BD;
+    --section-description-color-theme-light: #555555;
+    --info-data-description-color: #F7F7F7;
+    --dark-color-online-section: #191C26;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--primary-font);
+}
+
+/* COMPONENTY */
+
+
+/* HEADER */
+/* To clean later */
+.page-header {
+    background-color:rgb(162, 221, 223);
+    color: var(--primary-color-dark-theme);
+}
+
+.page-nav {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+}
+
+.menu-link {
+    font-weight: 600;
+    color: inherit;
+    
+}
+
+.menu-link:hover, .menu-link:focus, .menu-link:active,
+.contact-phone-number:hover, .contact-phone-number:focus {
+    color: var(--accent-color);
+}
+
+.contact-phone-number {
+    font-weight: 600;
+    color: inherit;
+}
+
+.modal-button {
+    font-family: inherit;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: inherit;
+    background-color: transparent;
+    border-color: var(--accent-color);
+}
+
+.modal-button:hover, .modal-button:focus, .modal-button:active {
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+/* HERO */
+.media-brand-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    
+    color: var(--primary-color-ligth-theme);
+}
+
+.media-brand-link:hover, .media-brand-link:focus {
+    color: var(--accent-color);
+}
+
+/* .hero-left-side .media-brand-link {
+    transform: rotate(-90deg);
+} */
+
+.suptitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+
+.suptitle-theme-dark {
+    color: var(--suptitle-color-dark-theme);
+}
+
+.title {
+    font-family: var(--title-font);
+}
+
+.main-title {
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    
+    color: var(--primary-color-dark-theme);
+}
+
+.section-description {
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+}
+
+.section-description-theme-dark {
+    color: var(--section-description-color-theme-dark);
+}
+
+.section-description-theme-light {
+    color: var(--section-description-color-theme-light);
+}
+
+.switch-button {
+    font-family: inherit;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+}
+
+.active-button {
+    color: var(--primary-color-dark-theme);
+}
+
+.nonactive-button {
+    color: var(--section-description-color-theme-dark);
+}
+
+.suptitle-theme-light {
+    color: var(--suptitle-color-light-theme);
+}
+
+.section-title {
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+}
+
+.section-title-theme-light {
+    color: var(--primary-color-ligth-theme);
+}
+
+.section-title-theme-dark {
+    color: var(--primary-color-dark-theme);
+}
+
+.section-subdescription {
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: 0.02em;
+}
+
+.section-subdescription-theme-light {
+    color: var(--section-description-color-theme-light);
+}
+
+.modal-button-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--primary-color-ligth-theme);
+    border: 1px solid var(--accent-color);
+}
+
+.modal-button-link:hover,
+.modal-button-link:focus,
+.modal-button-link:active {
+    color: var(--primary-color-dark-theme);
+    background-color: var(--accent-color);
+}
+
+.table-prices {
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+    color: var(--section-description-color-theme-dark);
+    /* Clear later */
+    background-color: var(--primary-color-ligth-theme);
+}
+
+/* DESCRIPTION */
+.info-data-item {
+    background-color: var(--info-data-description-color);
+}
+
+.info-data-number {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--primary-color-ligth-theme);
+}
+
+.character-plus {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.375;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.info-data-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--primary-color-ligth-theme);
+}
+
+/* OUR BARBERS */
+.barbers-section {
+    background-color: var(--info-data-description-color );
+}
+
+.card-barber-item {
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.card-barber-name {
+    font-size: 18px;
+    line-height: 1.38;
+    color: var(--primary-color-ligth-theme);
+}
+
+.card-barber-position {
+    font-size: 14px;
+    line-height: 1.36;
+    color: var(--accent-color);
+}
+
+.card-barber-social-link {
+    background-color: var(--primary-color-dark-theme);
+}
+
+.card-barber-social-link:hover, .card-barber-social-link:focus {
+    color: var(--accent-color);
+}
+
+/* Gallery OF IMAGES */
+
+/* ONLINE-BOOKING */
+.booking-section {
+    color: var(--primary-color-dark-theme);
+    background-color: var(--dark-color-online-section);
+}
+
+/* CONTACTS */
+.contacts-section {
+    color: var(--primary-color-dark-theme);
+    /* clear later */
+    background-color: var(--dark-color-online-section);
+}
+
+.address {
+    font-style: normal;
+}
+
+.address-contact-link {
+    color: var(--section-description-color-theme-dark);
+}
+
+.address-contact-link:hover, .address-contact-link:focus {
+    color: var(--accent-color);
+}
+
+.address-contact-link-street {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+}
+
+.work-time-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+
+    color: var(--primary-color-dark-theme);
+}
+
+/* FOOTER */
+.text-copyright {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--section-description-color-theme-dark);
+}
