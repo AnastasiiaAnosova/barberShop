@@ -12,7 +12,18 @@
     --dark-color-online-section: #191C26;
 }
 
+h1,h2,h3,h4,p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+}
+
 .list {
+    margin: 0;
+    padding-left: 0;
     list-style: none;
 }
 
@@ -25,19 +36,28 @@ body {
 }
 
 /* COMPONENTY */
-
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 
 /* HEADER */
-/* To clean later */
 .page-header {
-    background-color:rgb(162, 221, 223);
     color: var(--primary-color-dark-theme);
+
+    /* To clean later */
+    background-color:rgb(162, 221, 223);
 }
 
 .page-nav {
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
+}
+
+.logo {
+    display: block;
 }
 
 .menu-link {
@@ -189,13 +209,17 @@ body {
     background-color: var(--accent-color);
 }
 
+/* SERVICES AND PRICES */
+.services-section {
+    /* Clear later */
+    background-color: var(--primary-color-ligth-theme);
+}
+
 .table-prices {
     font-size: 18px;
     line-height: 1.66;
     letter-spacing: 0.02em;
     color: var(--section-description-color-theme-dark);
-    /* Clear later */
-    background-color: var(--primary-color-ligth-theme);
 }
 
 /* DESCRIPTION */
